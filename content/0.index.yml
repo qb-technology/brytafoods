@@ -3,8 +3,8 @@ seo:
   description: BrytaFoods company limited sells pre-cooked and packaged healthy foods to alleviate the hassle and time-consuming nature of cooking meals.
 navigation: false
 hero:
-  - title: '[Bringing Home To You]{class="font-playlist-script text-shadow-primary text-shadow-lg"}'
-  # - title: 'Bringing [Home]{class="text-primary"} To You'
+  # - title: '[Bringing Home To You]{class="font-playlist-script text-shadow-primary text-shadow-lg"}'
+  - title: 'Bringing [Home]{class="text-primary"} To You'
     description: Pre-cooked meals at your convenience. Ready to serve quickly and easily.
     bg_image:
       src: '/hero_bg.png'
@@ -83,7 +83,6 @@ sections:
         description: Our meals are packaged for easy storage and quick preparation, making them perfect for busy lifestyles.
         icon: i-lucide-package
 team:
-  title: Bryta Team
   icon: i-qb-team
   description: "We have a well-integrated and experienced team with diverse backgrounds who are committed to the growth of BrytaFoods. Our team employs holistic operational systems to help Bryta Foods function effectively."
   items:

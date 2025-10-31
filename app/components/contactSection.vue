@@ -68,7 +68,7 @@ const motion = {
       class="bg-neutral-950/60 text-white py-16 sm:py-24 lg:py-32"
     >
       <u-container>
-        <div class="bg-primary-800/50 p-16 space-y-6">
+        <div class="bg-primary-800/50 backdrop-blur-2xl p-16 space-y-6">
           <!-- <MDC
           v-if="props.title"
           :value="props.title"
@@ -93,6 +93,7 @@ const motion = {
                   label: 'text-white',
                   leadingIcon: 'text-white'
                 }"
+                class="hover:bg-transparent active:bg-transparent"
               />
               <u-button
                 variant="ghost"
@@ -104,6 +105,7 @@ const motion = {
                   label: 'text-white',
                   leadingIcon: 'text-white'
                 }"
+                class="hover:bg-transparent active:bg-transparent"
               />
               <u-button
                 variant="ghost"
@@ -114,6 +116,7 @@ const motion = {
                   label: 'text-white',
                   leadingIcon: 'text-white'
                 }"
+                class="hover:bg-transparent active:bg-transparent"
               />
             </div>
 
