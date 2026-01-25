@@ -1,0 +1,1 @@
+import{x as r,c,d as l,M as p,n as m,Q as u,R as s}from"./C0d-vcv1.js";const i={base:""},_={__name:"ProseEm",props:{class:{type:String,required:!1}},setup(e){const a=e,t=r(),o=u(()=>s({extend:s(i),...t.ui?.prose?.em||{}}));return(n,d)=>(c(),l("em",{class:m(o.value({class:a.class}))},[p(n.$slots,"default")],2))}};export{_ as default};

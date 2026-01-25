@@ -1,0 +1,1 @@
+import{x as r,c,d as l,M as p,n as u,Q as i,R as s}from"./C0d-vcv1.js";const m={base:""},g={__name:"ProseStrong",props:{class:{type:null,required:!1}},setup(e){const a=e,o=r(),t=i(()=>s({extend:s(m),...o.ui?.prose?.strong||{}}));return(n,d)=>(c(),l("strong",{class:u(t.value({class:a.class}))},[p(n.$slots,"default")],2))}};export{g as default};
