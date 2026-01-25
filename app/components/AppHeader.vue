@@ -1,9 +1,36 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-defineProps<{
-  links: NavigationMenuItem[]
-}>()
+const active = ref()
+const navLinks: NavigationMenuItem[] = [
+  {
+    label: 'About Us',
+    onSelect: () => {
+      navigateTo('/#about-us')
+      // active.value = 'item-0'
+    }
+  },
+  {
+    label: 'Our Product',
+    // to: '/#our-product',
+    onSelect: () => {
+      navigateTo('/#our-product')
+      // active.value = 'item-0'
+    }
+  },
+  {
+    label: 'Recipes',
+    to: '/recipes',
+  },
+  {
+    label: 'Contact Us',
+    // to: '/#contact-us',
+    onSelect: () => {
+      navigateTo('/#contact-us')
+      // active.value = 'item-0'
+    }
+  },
+]
 </script>
 
 <template>
@@ -17,8 +44,11 @@ defineProps<{
     </template>
 
     <UNavigationMenu
-      :items="links"
+      v-model="active"
+      :items="navLinks"
       variant="link"
+      highlight
+      highlight-color="primary"
     >
     </UNavigationMenu>
 
@@ -29,14 +59,14 @@ defineProps<{
         color="primary"
         variant="solid"
         size="xl"
-        to="#"
+        to="/partners_investors_sponsors"
         label="Learn More"
       />
     </template>
 
     <template #body>
       <UNavigationMenu
-        :items="links"
+        :items="navLinks"
         orientation="vertical"
         class="-mx-2.5"
       />
@@ -47,7 +77,7 @@ defineProps<{
         label="Learn More"
         color="primary"
         variant="solid"
-        to="#"
+        to="/partners_investors_sponsors"
         block
         class="mb-3"
       />

@@ -86,6 +86,7 @@ const motion = {
               <u-button
                 variant="ghost"
                 color="neutral"
+                target="_blank"
                 :to="socials.phone"
                 icon="i-lucide-phone"
                 label="Telephone"
@@ -98,6 +99,7 @@ const motion = {
               <u-button
                 variant="ghost"
                 color="neutral"
+                target="_blank"
                 :to="socials.email"
                 icon="i-lucide-mail"
                 label="E-mail"
@@ -124,24 +126,28 @@ const motion = {
               <u-button
                 variant="solid"
                 color="neutral"
+                target="_blank"
                 :to="socials.instagram"
                 icon="i-lucide-instagram"
               />
               <u-button
                 variant="solid"
                 color="neutral"
+                target="_blank"
                 :to="socials.x"
                 icon="i-simple-icons-x"
               />
               <u-button
                 variant="solid"
                 color="neutral"
+                target="_blank"
                 :to="socials.linkedin"
                 icon="i-lucide-linkedin"
               />
               <u-button
                 variant="solid"
                 color="neutral"
+                target="_blank"
                 :to="socials.youtube"
                 icon="i-lucide-youtube"
               />

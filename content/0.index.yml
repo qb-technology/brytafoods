@@ -13,7 +13,7 @@ hero:
       - label: Learn More
         icon: i-lucide-arrow-right
         trailing: true
-        to: '#'
+        to: '/partners_investors_sponsors'
         size: xl
   # - title: 'Christmas [Feast]{class="text-primary"} is coming soon'
   #   description: Join us as at the praise banquet this december as we minister to our Lord Jesus in psalms, hymns and food. We do it all to the glory of God.
@@ -64,7 +64,8 @@ partners:
       src: '/partners/afc-logo.png'
     url: 'https://afchub.org/'
 sections:
-  - title: Who We Are
+  - title: Who [We]{class="text-primary"} Are
+    id: about-us
     description: "Welcome to Bryta Foods, a company in Ghana. Our mission is to offer convenient and healthy food options without sacrificing taste and quality. Our products are made with high-quality ingredients and designed to make it easy for anyone to prepare a wholesome meal in minutes. At Bryta Foods, we believe that everyone deserves to enjoy the taste of home-cooked meals, regardless of their busy schedules."
     headline: About Us
     orientation: horizontal
@@ -84,11 +85,11 @@ sections:
         icon: i-lucide-package
 team:
   icon: i-qb-team
+  title: Meet Our [Bryta]{class="text-primary"} Team
   description: "We have a well-integrated and experienced team with diverse backgrounds who are committed to the growth of BrytaFoods. Our team employs holistic operational systems to help Bryta Foods function effectively."
   items:
     - title: Ms Bridget Osei Agyemang
       description: FOUNDER & COO 
-      variant: subtle
       image:
         src: /team/bridget.png
         alt: Bridget Osei Agyemang
@@ -205,6 +206,7 @@ testimonials:
         avatar:
           src: https://i.pravatar.cc/120?img=21
 cta:
+  id: contact-us
   headline: Partnership & Sponsorship
   title: Interested in partnering with us?
   description: We would love to hear from you! Whether you're interested in investing, collaborating on a project, or exploring our products, we're open to discussing how we can work together to make a positive impact.

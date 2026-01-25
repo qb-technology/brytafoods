@@ -1,0 +1,80 @@
+seo:
+  title: Invest in BrytaFoods - Scalable healthy convenience food in Ghana
+  description: Partner with BrytaFoods to scale affordable, pre-cooked healthy meals across Ghana and West Africa. Strong unit economics, growing demand, and impact.
+navigation: false
+hero:
+  title: 'Scaling [Convenient]{class="text-primary"} Healthy Meals'
+  description: BrytaFoods delivers ready-to-serve, nutritious meals at scale. Join us to expand access, grow revenue, and create measurable impact.
+  orientation: 'vertical'
+  links:
+      - label: Download Investor Deck
+        icon: i-lucide-download
+        trailing: true
+        to: 'https://r2.qbtech.dev/brytafoods/Bryta-Brochure-2.pdf'
+        target: '_blank'
+        size: xl
+partners:
+  - name: 'Richard Quaye Foundation',
+    image:
+      src: '/partners/rqf-logo.png'
+    url: 'https://richardquayefoundation.org/'
+  - name: 'African Impact Initiative',
+    image:
+      src: '/partners/aii-logo.png'
+    url: 'https://africanimpact.ca/'
+  - name: 'Food Funded Entrepreneurship and Investor Fair',
+    image:
+      src: '/partners/ffei-logo.png'
+    url: 'https://foodfunded.us/'
+  - name: 'Africa Food Changemakers',
+    image:
+      src: '/partners/afc-logo.png'
+    url: 'https://afchub.org/'
+sections:
+  - title: Why [BrytaFoods]{class="text-primary"} Now
+    id: about-us
+    description: "BrytaFoods is a Ghana-based food company meeting surging demand for convenient, healthy meals. We combine locally sourced ingredients, standardized production, and efficient distribution to deliver quality at an affordable price point. Our model is built for repeat purchases, strong margins, and rapid geographic expansion."
+    headline: Investment Thesis
+    orientation: horizontal
+    reverse: false
+    image:
+      src: '/investors/why2.jpg'
+      alt: 'Healthy food bowl with vegetables and grains'
+    features:
+      - title: Proven demand
+        description: Busy households, professionals, and institutions are choosing convenient, healthy meals. Repeat purchase behavior is strong.
+        icon: i-qb-meal
+      - title: Scalable operations
+        description: Standardized recipes, batch production, and reliable sourcing enable predictable cost control and growth.
+        icon: i-lucide-clock
+      - title: Impact at scale
+        description: We improve nutrition access, support local farmers, and create jobs across the value chain.
+        icon: i-lucide-package
+  - title: Social [Impact]{class="text-primary"} & UN SDGs
+    id: sdg-impact
+    description: "BrytaFoods advances the UN Sustainable Development Goals by expanding access to nutritious, affordable meals, strengthening local food systems, and creating dignified jobs across the value chain. Our impact framework aligns funding with measurable outcomes for communities and investors."
+    headline: SDG Alignment
+    orientation: horizontal
+    reverse: true
+    image:
+      src: '/investors/why.jpg'
+      alt: 'Community meal program and local farming collaboration'
+    features:
+      - title: SDG 2 • Zero Hunger
+        description: Consistent access to affordable, healthy meals improves household nutrition and food security.
+        icon: i-lucide-wheat
+      - title: SDG 8 • Decent Work & Growth
+        description: Job creation and skills development across production, logistics, and retail distribution.
+        icon: i-lucide-briefcase
+      - title: SDG 12 • Responsible Consumption
+        description: Efficient batch cooking and packaging reduce waste while promoting healthier consumption.
+        icon: i-lucide-recycle
+cta:
+  id: contact-us
+  headline: Investors • Partners • Sponsors
+  title: Let’s build the next leading convenience food brand in Ghana
+  description: We’re seeking strategic investors, distribution partners, and sponsors to scale production, expand retail access, and deepen community impact. Share your goals and we’ll respond within 48 hours.
+  links:
+    - label: Start a Conversation
+      icon: i-lucide-mail
+      to: '/partners'

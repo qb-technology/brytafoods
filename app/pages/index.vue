@@ -21,45 +21,47 @@ useSeoMeta({
         v-model="page.hero"
       />
 
-      <UPageCTA
-        v-if="page.partners && page.partners.length"
-        title="Trusted Partners"
-        variant="naked"
-      >
-        <UMarquee
-          :repeat="10"
-          pause-on-hover
+      <UPageSection>
+        <UPageCTA
+          v-if="page.partners && page.partners.length"
+          title="Trusted Partners & Sponsors"
+          variant="subtle"
+          :ui="{
+            container: 'px-0 lg:px-0'
+          }"
         >
-          <UPageCard
-            v-for="(partner, ind) of page.partners"
-            :key="ind"
-            variant="naked"
+          <UMarquee
+            :repeat="10"
+            pause-on-hover
+            :reverse="true"
+            :overlay="false"
           >
-            <UTooltip :text="partner.name">
-              <ULink
-                :to="partner.url"
-                target="_blank"
-              >
-                <NuxtImg
-                  :src="partner.image.src"
-                  :alt="partner.image.alt"
-                />
-              </ULink>
-            </UTooltip>
-          </UPageCard>
-        </UMarquee>
-      </UPageCTA>
+            <div
+              v-for="(partner, ind) of page.partners"
+              :key="ind"
+              variant="naked"
+            >
+              <UTooltip :text="partner.name">
+                <ULink
+                  :to="partner.url"
+                  target="_blank"
+                >
+                  <NuxtImg
+                    :src="partner.image.src"
+                    :alt="partner.image.alt"
+                    class="h-14 object-cover"
+                  />
+                </ULink>
+              </UTooltip>
+            </div>
+          </UMarquee>
+        </UPageCTA>
+      </UPageSection>
 
       <MotionSection
         v-for="(section, index) in page.sections"
         :key="index"
-        :title="section.title"
-        :description="section.description"
-        :orientation="section.orientation"
-        :reverse="section.reverse"
-        :features="section.features"
-        :links="section.links"
-        :headline="section.headline"
+        v-bind="{ ...section }"
       >
         <NuxtImg
           v-if="section.image && section.image.src"
@@ -162,7 +164,15 @@ useSeoMeta({
           >
             <template #footer>
               <UUser
-                v-bind="testimonial.user"
+                v-bind="{
+                  ...testimonial.user,
+                  avatar: {
+                    src: testimonial.user.avatar.src,
+                    srcset: testimonial.user.avatar.srcset,
+                    alt: testimonial.user.avatar.alt,
+                    icon: 'i-lucide-image'
+                  }
+                }"
                 size="lg"
               />
             </template>

@@ -122,109 +122,85 @@ export const collections = {
       }),
     })
   }),
-  blog: defineCollection({
-    source: '3.blog.yml',
-    type: 'page'
-  }),
-  posts: defineCollection({
-    source: '3.blog/**/*',
+  investors: defineCollection({
+    source: '1.investors.yml',
     type: 'page',
     schema: z.object({
-      image: z.object({ src: z.string().nonempty().editor({ input: 'media' }) }),
-      authors: z.array(
-        z.object({
-          name: z.string().nonempty(),
-          to: z.string().nonempty(),
-          avatar: z.object({ src: z.string().nonempty().editor({ input: 'media' }) })
-        })
-      ),
-      date: z.date(),
-      badge: z.object({ label: z.string().nonempty() })
-    })
-  }),
-  dev: defineCollection({
-    source: 'dev.yml',
-    type: 'page',
-    schema: z.object({
-      hero: z.array(
-        createSectionBaseSchema().extend({
-          bg_image: createImageSchema()
-        })
-      ),
-      // sections: z.array(
-      //   createSectionBaseSchema().extend({
-      //     features: z.array(createFeatureItemSchema()),
-      //     icon: z.string().optional()
-      //   })
-      // ),
-      // features: createSectionBaseSchema().extend({
-      //   items: z.array(createFeatureItemSchema().extend({
-      //     image: createImageSchema(),
-      //     variant: z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'naked']),
-      //     reverse: z.boolean().optional().default(true)
-      //   }))
-      // }),
-      // testimonials: createBaseSchema().extend({
-      //   headline: z.string().optional(),
-      //   items: z.array(
-      //     z.object({
-      //       quote: z.string().nonempty(),
-      //       user: z.object({
-      //         name: z.string().nonempty(),
-      //         description: z.string().nonempty(),
-      //         to: z.string().nonempty(),
-      //         target: z.string().nonempty(),
-      //         avatar: createImageSchema()
-      //       })
-      //     })
-      //   )
-      // }),
-      // cta: createBaseSchema().extend({
-      //   links: z.array(createLinkSchema())
-      // })
-    })
-  }),
-  about: defineCollection({
-    source: '1.about.yml',
-    type: 'page',
-    schema: z.object({
-      hero: createSectionBaseSchema().extend({
-        image: createImageSchema()
-      }),
-      verses: z.array(
-        createBibleVerseSchema()
-      ),
+      hero: createSectionBaseSchema(),
+      partners: z.array(createPartnersSchema()),
       sections: z.array(
         createSectionBaseSchema().extend({
           features: z.array(createFeatureItemSchema()),
-          icon: z.string().optional()
+          icon: z.string().optional(),
+          image: createImageSchema().optional()
         })
       ),
-      features: createSectionBaseSchema().extend({
-        items: z.array(createFeatureItemSchema().extend({
-          image: createImageSchema(),
-          variant: z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'naked']),
-          reverse: z.boolean().optional().default(true)
-        }))
-      }),
-      testimonials: createBaseSchema().extend({
-        headline: z.string().optional(),
-        items: z.array(
-          z.object({
-            quote: z.string().nonempty(),
-            user: z.object({
-              name: z.string().nonempty(),
-              description: z.string().nonempty(),
-              to: z.string().nonempty(),
-              target: z.string().nonempty(),
-              avatar: createImageSchema()
-            })
-          })
-        )
-      }),
       cta: createBaseSchema().extend({
         links: z.array(createLinkSchema())
-      })
+      }),
     })
   }),
+  // blog: defineCollection({
+  //   source: '3.blog.yml',
+  //   type: 'page'
+  // }),
+  // posts: defineCollection({
+  //   source: '3.blog/**/*',
+  //   type: 'page',
+  //   schema: z.object({
+  //     image: z.object({ src: z.string().nonempty().editor({ input: 'media' }) }),
+  //     authors: z.array(
+  //       z.object({
+  //         name: z.string().nonempty(),
+  //         to: z.string().nonempty(),
+  //         avatar: z.object({ src: z.string().nonempty().editor({ input: 'media' }) })
+  //       })
+  //     ),
+  //     date: z.date(),
+  //     badge: z.object({ label: z.string().nonempty() })
+  //   })
+  // }),
+  // about: defineCollection({
+  //   source: '1.about.yml',
+  //   type: 'page',
+  //   schema: z.object({
+  //     hero: createSectionBaseSchema().extend({
+  //       image: createImageSchema()
+  //     }),
+  //     verses: z.array(
+  //       createBibleVerseSchema()
+  //     ),
+  //     sections: z.array(
+  //       createSectionBaseSchema().extend({
+  //         features: z.array(createFeatureItemSchema()),
+  //         icon: z.string().optional()
+  //       })
+  //     ),
+  //     features: createSectionBaseSchema().extend({
+  //       items: z.array(createFeatureItemSchema().extend({
+  //         image: createImageSchema(),
+  //         variant: z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'naked']),
+  //         reverse: z.boolean().optional().default(true)
+  //       }))
+  //     }),
+  //     testimonials: createBaseSchema().extend({
+  //       headline: z.string().optional(),
+  //       items: z.array(
+  //         z.object({
+  //           quote: z.string().nonempty(),
+  //           user: z.object({
+  //             name: z.string().nonempty(),
+  //             description: z.string().nonempty(),
+  //             to: z.string().nonempty(),
+  //             target: z.string().nonempty(),
+  //             avatar: createImageSchema()
+  //           })
+  //         })
+  //       )
+  //     }),
+  //     cta: createBaseSchema().extend({
+  //       links: z.array(createLinkSchema())
+  //     })
+  //   })
+  // }),
 }
