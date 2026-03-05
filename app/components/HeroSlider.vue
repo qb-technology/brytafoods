@@ -89,10 +89,9 @@ const { modelValue } = useVModels(props, emits)
         'background-image': `url(${hero.bg_image.src})`
       }"
       :ui="{
-        container: 'bg-black/40 max-w-full',
         title: 'text-neutral-50 dark:text-white',
         description: 'text-neutral-300 dark:text-neutral-300',
-        root: 'bg-center bg-cover'
+        root: 'bg-center bg-cover before:content-[] before:absolute before:inset-0 before:bg-black/40'
       }"
     >
       <template #title>
@@ -208,10 +207,10 @@ const { modelValue } = useVModels(props, emits)
       'background-image': `url(${modelValue[0]!.bg_image.src})`
     }"
     :ui="{
-      container: 'bg-black/40 max-w-full',
+      container: '',
       title: 'text-neutral-50 dark:text-white',
       description: 'text-neutral-300 dark:text-neutral-300',
-      root: 'bg-center bg-cover'
+      root: 'bg-center bg-cover before:content-[] before:absolute before:inset-0 before:bg-black/40'
     }"
   >
     <template #title>
