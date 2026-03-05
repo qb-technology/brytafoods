@@ -9,7 +9,15 @@ useSeoMeta({
   title,
   ogTitle: title,
   description,
-  ogDescription: description
+  ogDescription: description,
+})
+
+useHead({
+  meta: [
+    {
+      name: 'google-site-verification', content: 'Dh1_L9eObyBe9qvfY6DAR1h9N-K6l78D8nzSdnHehI'
+    }
+  ]
 })
 </script>
 
